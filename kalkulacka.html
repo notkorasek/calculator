@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./kalkulacka.css"> <!-- propojení s css-->
+
+    <title>Calculator</title>
+
+</head>
+<body>
+
+    <div id="calculator">
+        <input id="display">
+        <div id="keys"> <!-- jednotlivé buttony (tlačitka klávesnice)-->
+            <div id="fun7">
+                <button id="clearbutton" onclick="clearCalculator()">AC</button>
+            </div>
+            <div id="fun8">
+                <button onclick="plusminus()">+-</button>
+            </div>
+            <div id="fun6">
+                <button onclick="calculator('%')">%</button>
+            </div>
+            <div id="fun9">
+                <button onclick="calculator('²')">²</button>
+                </div>
+
+            <button onclick="calculator('(')">(</button>
+            <button onclick="calculator(')')">)</button>
+            <div id="fun">
+                <button onclick="calculator('÷')">÷</button>
+            </div>
+            <button onclick="calculator('7')">7</button>
+            <button onclick="calculator('8')">8</button>
+            <button onclick="calculator('9')">9</button>
+            <div id="fun2">
+                <button onclick="calculator('×')">×</button>
+            </div>
+            <button onclick="calculator('4')">4</button>
+            <button onclick="calculator('5')">5</button>
+            <button onclick="calculator('6')">6</button>
+            <div id="fun3">
+                <button onclick="calculator('-')">-</button>
+            </div>
+            <button onclick="calculator('1')">1</button>
+            <button onclick="calculator('2')">2</button>
+            <button onclick="calculator('3')">3</button>
+            <div id="fun4">
+                <button onclick="calculator('+')">+</button>
+            </div>
+            <button onclick="calculator('0')">0</button>
+            <button onclick="calculator(',')">,</button><div id="fun5">
+                <button onclick="calculator('=')">=</button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="./kalkulacka.js"></script> <!--propojení s js-->
+</body>
+</html>

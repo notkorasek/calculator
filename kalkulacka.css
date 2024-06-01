@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body { /*vycentruje kalkulačku do středu a přidání pozadí */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #002;
+
+}
+#calculator { /*upravuje zarovnání kalkulačky do požadovaného tvaru*/
+    font-family: Arial;
+    background-color: black;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+
+}
+#display { /*upravuje display nad buttonů kalkulačky (velikost, barvu, font)*/
+    width: 100%;
+    padding: 25px;
+    font-size: 5rem;
+    text-align: center;
+    border: none;
+    background-color: hsl(0, 0%, 15%);
+    color: white;
+}
+#keys { /*upravuje seřazení a mezery mezi buttony*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 40px;
+}
+button { /*upravuje vzhled buttonu (barvu, font, tvar, změna kursoru při přejezdu přes button)*/
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#keys button:nth-child(20) {
+    grid-column: span 2;
+    width: 220px;
+}
+
+#keys button:nth-child(6) {
+    grid-column: span 2;
+
+}
+
+#fun button, #fun2 button, #fun3 button, #fun4 button, #fun5 button, #fun6 button { /*mění buttony s jednotlivými divy na jiný vzhled něž u ostatních buttonů*/
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#fun8 button, #fun7 button, #fun6 button, #fun9 button{ /*mění buttony s jednotlivými divy na jiný vzhled něž u ostatních buttonů*/
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover { /*upravuje chování buttonu při přejezd přes button*/
+    background-color: hsl(0, 0%, 40%);
+}
+button:active {  /*upravuje chování buttonu při aktivaci (zmáčkuntí button)*/
+    background-color: hsl(0, 0%, 50%);
+}
+
+#fun button:hover, #fun2 button:hover, #fun3 button:hover, #fun4 button:hover, #fun5 button:hover { /*upravuje chování buttonu při přejezd přes button*/
+    background-color: hsl(0, 0%, 95%);
+    color: orange;
+}
+#fun button:active, #fun2 button:active, #fun3 button:active, #fun4 button:active, #fun5 button:active { /*upravuje chování buttonu při aktivaci (zmáčkuntí button)*/
+    background-color: hsl(0, 0%, 50%);
+    color: orange;
+}
+
+#fun8 button:hover, #fun7 button:hover, #fun6 button:hover, #fun9 button:hover { /*upravuje chování buttonu při přejezd přes button*/
+    background-color: hsl(0,0%, 80%);
+}
+
+#fun8 button:active, #fun7 button:active, #fun6 button:active, #fun9 button:active {  /*upravuje chování buttonu při aktivaci (zmáčkuntí button)*/
+    background-color: hsl(0, 0%, 50%);
+}
+
+
