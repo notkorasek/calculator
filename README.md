@@ -59,7 +59,7 @@ Při otevření ‘kalkucka.html’, ‘kalkulacka.css’, ‘kalkulacka.js’ v
 Všechny důležité funkce a části kódu jsou pokryty testy (Všechny proběhly úspěšně). 
 
 **Licence**
-Tento projekt je licencován pod © 2024 Leher Projects
+Tento projekt je licencován pod © 2024 Calculator - Jakub Lehar
 
 **Kontakt**
 Máte-li jakékoliv dotazy nebo potřebujete pomoct, kontaktujte nás na adresu kuba.lehar@gmail.com
